@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Toast Notifications</title>
+</head>
+<body>
+  <div id="toasts"></div>
+  <div class="content">
+    <button class="btn" id="button">Click to See Random Fruits Name</button>
+    <img src="images/tn.png" alt="Description of the image" onclick="reloadPage()" />
+  </div>
+  <a href="group_members.html" target="_blank" class="btn btn-secondary" id="groupDetailsButton">Team Members Details</a>
+  <a href="tn.html" target="_blank" class="btn" id="tn">Know about Toast Notifications</a>
+  <div class="style-select">
+    <div class="style-select">
+      <label for="styleSelect">Select Notification Style:</label>
+      <select id="styleSelect">
+        <option value="random">Random</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="purple">Purple</option>
+        <option value="blue">Blue</option>
+        <option value="orange">Orange</option>
+        <option value="pink">Pink</option>
+      </select>
+    </div>    
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>

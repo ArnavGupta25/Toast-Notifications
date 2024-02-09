@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 82, 169, 0.501);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Take up remaining vertical space */
+}
+
+.btn {
+  background-color: #cf9e9e;
+  color: rebeccapurple;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; /* Add transition for smooth fade out */
+  display: flex;
+  align-items: center;
+}
+
+.toast img {
+  width: 40px; /* Adjust the width of the image */
+  height: 40px; /* Adjust the height of the image */
+  margin-right: 10px; /* Add some margin between the image and the text */
+}
+
+.toast span {
+  font-weight: bold;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    background-color: rgba(255, 255, 255, 0.5); /* Change to lighter background color */
+  }
+}
+
+#groupDetailsButton {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #b5d0ca;
+  color: #000;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  animation: none; /* Remove animation */
+  text-decoration: none; /* Remove underline */
+}
+
+#groupDetailsButton:hover {
+  background-color: #b5d0ca;
+}
+
+#groupDetailsButton:active {
+  transform: scale(0.98);
+}
+
+#tn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #b5d0ca;
+  color: #000;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  animation: none; /* Remove animation */
+  text-decoration: none; /* Remove underline */
+}
+
+#tn:hover {
+  background-color: #b5d0ca;
+}
+
+#tn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 80%; /* Adjust the button width for smaller screens */
+  }
+
+  #groupDetailsButton,
+  #tn {
+    position: static;
+    margin-top: 10px;
+    width: 80%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  max-height: calc(100vh - 150px);
+}
+
+/* Add this CSS code to style the dropdown menu */
+#styleSelect {
+  appearance: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem; /* Adjust the font size for smaller size */
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+#styleSelect option {
+  background-color: #fff;
+  color: #416c7d;
+}

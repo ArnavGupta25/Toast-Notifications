@@ -1,0 +1,103 @@
+/* Reset default margin and padding */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles for the page */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the heading */
+h1 {
+  text-align: center;
+  padding: 40px 0;
+  color: #333;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+/* Style the member details list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Style each list item */
+li {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Style the member name */
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Style member details */
+p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Add hover effect to list items */
+li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Add hover effect to links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add animation to headings */
+h1, h2 {
+  animation: fade-in 0.8s ease;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style the member images */
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect to member images */
+img:hover {
+  transform: scale(1.1);
+}

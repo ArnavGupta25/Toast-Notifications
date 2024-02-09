@@ -1,0 +1,113 @@
+/* Reset some default styles for consistency */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+}
+
+/* Heading styles */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover,
+h2:hover {
+  color: #0056b3;
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* List styles */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Link styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Custom styles for toast notifications section */
+#keyFeatures,
+#implementation {
+  margin-top: 30px;
+}
+
+#keyFeatures ul li,
+#implementation p {
+  margin-bottom: 10px;
+}
+
+/* Additional styles for a more attractive appearance */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for links in the container */
+.container a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.container a:hover {
+  color: #0056b3;
+}
+
+/* Animation for toast notifications section */
+#keyFeatures {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
